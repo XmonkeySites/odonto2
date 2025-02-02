@@ -12,10 +12,11 @@ import googleStar from "/googleStar.webp";
 import bgcallme from "/bgcallme.png";
 import { Contact } from "../contact";
 import { FaWhatsapp } from "react-icons/fa";
-import {Treatments} from "../treatments"
+import { Treatments } from "../treatments";
 import { AnimatedText } from "../animatedtext";
-import teeth from "/teeth.jpg"
+import teeth from "/teeth.jpg";
 import { AnimatedUnderline } from "../AnimatedUnderline";
+import { Local } from "../Local";
 
 export function Header() {
   return (
@@ -186,7 +187,7 @@ export function Header() {
         </h2>
         <Treatments />
       </section>
-      <section className="flex flex-col gap-7 items-center px-[2px] leading-[35px] pt-15">
+      <section className="flex flex-col gap-7 items-center px-[2px] leading-[35px] pt-15 pb-[75px]">
         <div className="flex flex-col">
           <h2 className="text-[31px] font-semibold text-center text-[#9B75498A]">
             Veja a transformação que um
@@ -206,15 +207,22 @@ export function Header() {
           src={teeth}
           alt=""
         />
-        <Watz className="h-[10px] max-h-[10px] w-[50px]" />
+        <Watz className="h-[10px] max-h-[10px] w-[50px] " />
       </section>
-      <section className="flex flex-col items-center bg-[#9B7549]">
-      
-        <br />
+      <section className="flex flex-col items-center  bg-[#9B7549] w-[110%] pb-[20px] gap-5">
+        <h2 className="text-white text-[26px] font-semibold">
+          Nossa Localização:
+        </h2>
+        <Local />
 
-        <br />
-        <br />
-        <br />
+        <div className="flex items-center justify-center min-w-[430px] min-h-[70px] py-2 bg-[#207412] rounded-[7px] border-[#2AA716] border-x-[2px] border-y-[2px]  mt-[20px]">
+          <a href="" className="flex items-center gap-2">
+            <FaWhatsapp className="w-[25px] h-[25px] text-white" />
+            <span className="text-white text-[18px] font-semibold">
+              Falar com a Equipe
+            </span>
+          </a>
+        </div>
       </section>
     </section>
   );
