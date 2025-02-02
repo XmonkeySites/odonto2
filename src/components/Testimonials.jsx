@@ -18,7 +18,7 @@ import "./styles.css";
 function Blockslider() {
   return (
     <div className="pl-[1rem]">
-      <div className="bg-white flex flex-col items-center w-[350px] h-auto gap-[15px] rounded-lg shadow-md">
+      <div className="bg-white flex flex-col items-center justify-center w-[350px] h-auto gap-[15px] rounded-lg shadow-md xl:w-[500px]">
         <div className="flex flex-initial gap-[50px] pt-7">
           <div className="flex flex-initial gap-3">
             <img
@@ -59,7 +59,7 @@ function Blockslider() {
 
 export function Testimonials() {
   return (
-    <div className="w-full flex justify-center items-center py-10 bg-[#f9f9f9]">
+    <div className="w-full flex justify-center items-center py-10 bg-[#ffffff]">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -69,7 +69,7 @@ export function Testimonials() {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="w-full max-w-[400px]"
+        className="w-screen max-w-full px-4"
       >
         {/* Slides */}
         <SwiperSlide>

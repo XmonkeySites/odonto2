@@ -7,6 +7,7 @@ import bgcell from "/bgcell.png";
 import googleStar from "/googleStar.webp";
 import bgcallme from "/bgcallme.png";
 import teeth from "/teeth.jpg";
+import bgcallmepc from "/bgcallmepc.png";
 
 // Importação de ícones
 import { FaWhatsapp } from "react-icons/fa";
@@ -22,4 +23,5 @@ export {
   bgcallme,
   teeth,
   FaWhatsapp,
+  bgcallmepc,
 };

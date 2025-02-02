@@ -51,7 +51,7 @@ export function Treatments() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-8 px-4">
+    <div className="flex flex-col items-center gap-8 px-4 md:grid md:grid-cols-2 xl:grid-cols-3">
       {/* Iteração dos tratamentos */}
       {treatmentsData.map((treatment) => (
         <div

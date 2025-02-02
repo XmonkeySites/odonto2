@@ -14,7 +14,7 @@ export function AnimatedUnderline() {
 
   return (
     <div className="relative">
-      <h3 className="text-[31px] font-semibold text-center text-[#9B7549]">
+      <h3 className="text-[31px] font-semibold text-center text-[#9B7549] md:text-[41px]">
         sorriso pode trazer!
       </h3>
       <span
