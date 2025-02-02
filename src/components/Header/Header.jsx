@@ -126,7 +126,7 @@ export function Header() {
           </div>
         </section>
         {/* Seção de Depoimentos / Google Star */}
-        <section className=" flex flex-col gap-[100px] bg-white pt-[40px] ">
+        <section className=" flex flex-col gap-[100px] bg-white pt-[40px] w-[110%]">
           <div className="flex flex-col items-center">
             {/* Logo do Google */}
             <img
