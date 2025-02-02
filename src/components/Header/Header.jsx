@@ -12,6 +12,10 @@ import googleStar from "/googleStar.webp";
 import bgcallme from "/bgcallme.png";
 import { Contact } from "../contact";
 import { FaWhatsapp } from "react-icons/fa";
+import {Treatments} from "../treatments"
+import { AnimatedText } from "../animatedtext";
+import teeth from "/teeth.jpg"
+import { AnimatedUnderline } from "../AnimatedUnderline";
 
 export function Header() {
   return (
@@ -126,7 +130,7 @@ export function Header() {
           </div>
         </section>
         {/* Seção de Depoimentos / Google Star */}
-        <section className=" flex flex-col gap-[100px] bg-white pt-[40px] w-[110%]">
+        <section className=" flex flex-col gap-[100px] bg-white pt-[40px] w-[110%] items-center justify-center">
           <div className="flex flex-col items-center">
             {/* Logo do Google */}
             <img
@@ -175,8 +179,43 @@ export function Header() {
           </div>
         </section>
       </section>
-      <h3>Tratamentos e Serviços</h3>
-      <h2>Tratamentos personalizados para transformar seu sorriso</h2>
+      <section className="flex flex-col items-center gap-7">
+        <AnimatedText />
+        <h2 className="font-semibold text-[24px] text-[#9B7549] text-center">
+          Tratamentos personalizados para transformar seu sorriso
+        </h2>
+        <Treatments />
+      </section>
+      <section className="flex flex-col gap-7 items-center px-[2px] leading-[35px] pt-15">
+        <div className="flex flex-col">
+          <h2 className="text-[31px] font-semibold text-center text-[#9B75498A]">
+            Veja a transformação que um
+          </h2>
+
+          <h3 className="text-[31px] font-semibold text-center text-[#9B7549] ">
+            <AnimatedUnderline />
+          </h3>
+          <p className="text-[#9B7549] text-[14px] font-[300] text-center pt-10 leading-[20px] px-[2px]">
+            Cada sorriso conta uma história. Confira os resultados incríveis de
+            quem já passou por aqui e inspire-se para iniciar a sua
+            transformação.
+          </p>
+        </div>
+        <img
+          className="w-[240px] h-[140px] rounded-[10px]"
+          src={teeth}
+          alt=""
+        />
+        <Watz className="h-[10px] max-h-[10px] w-[50px]" />
+      </section>
+      <section className="flex flex-col items-center bg-[#9B7549]">
+      
+        <br />
+
+        <br />
+        <br />
+        <br />
+      </section>
     </section>
   );
 }

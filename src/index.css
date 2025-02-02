@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
 
+@keyframes fadeLeftRight {
+  0% { mask-image: linear-gradient(to right, transparent 20%, black 100%); }
+  50% { mask-image: linear-gradient(to right, black 100%, transparent 20%); }
+  100% { mask-image: linear-gradient(to right, transparent 20%, black 100%); }
+}
 
+.animate-fade-left-right {
+  animation: fadeLeftRight 3s infinite ease-in-out;
+}
 
 
 
