@@ -56,7 +56,7 @@ export function Treatments() {
       {treatmentsData.map((treatment) => (
         <div
           key={treatment.id}
-          className="flex flex-col items-center gap-8 px-[20px]"
+          className="flex flex-col items-start gap-4 px-[20px] max-w-[350px]"
         >
           {/* Imagem acima do título */}
           <img
@@ -65,9 +65,9 @@ export function Treatments() {
             className="min-w-[340px] min-h-[160px] max-w-[350px] max-h-[190px] rounded-[20px]"
           />
 
-          {/* Título e Botão */}
-          <div className="flex items-center justify-between w-full max-w-[600px] px-4">
-            <h3 className="text-[18px] font-[400] text-[#9B7549]">
+          {/* Título e Botão - Agora sempre alinhados à esquerda */}
+          <div className="flex items-center justify-between w-full">
+            <h3 className="text-[18px] font-[400] text-[#9B7549] text-left">
               {treatment.title}
             </h3>
             <button
@@ -75,13 +75,9 @@ export function Treatments() {
               className="text-[#9B7549] flex items-center gap-1"
             >
               {openId === treatment.id ? (
-                <>
-                  <IoMdArrowDropup className="w-[30px] h-[30px]" />
-                </>
+                <IoMdArrowDropup className="w-[30px] h-[30px]" />
               ) : (
-                <>
-                  <IoMdArrowDropright className="w-[30px] h-[30px]" />
-                </>
+                <IoMdArrowDropright className="w-[30px] h-[30px]" />
               )}
             </button>
           </div>
@@ -94,7 +90,7 @@ export function Treatments() {
                 : "max-h-0 opacity-0"
             }`}
           >
-            <p className="text-[16px] text-[#9B7549] font-[300] mt-2 text-center">
+            <p className="text-[16px] text-[#9B7549] font-[300] mt-2 text-left">
               {treatment.description}
             </p>
           </div>

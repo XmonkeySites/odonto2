@@ -5,7 +5,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
-// Função que retorna os ícones
+// Função para retornar os ícones corretos
 function getIcon(type) {
   switch (type) {
     case "phone":
@@ -27,10 +27,10 @@ function InfoCard({ type, text }) {
 
   const containerStyle =
     type === "insta"
-      ? "w-[290px] min-h-[40px]" // Box menor para Instagram
+      ? "w-full max-w-[280px] min-h-[40px]" // Instagram menor
       : type === "email"
-      ? "min-w-[348px] min-h-[60px]" // Box maior para Email
-      : "min-w-[348px] min-h-[47px]"; // Box padrão para os outros
+      ? "w-full max-w-[380px] min-h-[60px]" // Email maior
+      : "w-full max-w-[340px] min-h-[50px]"; // Padrão
 
   return (
     <div
@@ -42,10 +42,10 @@ function InfoCard({ type, text }) {
   );
 }
 
-// Componente Contact
+// Componente Contact ajustado responsivamente
 export function Contact() {
   return (
-    <div className="flex flex-col gap-[20px] bg-transparent items-center">
+    <div className="flex flex-col gap-4 items-center w-full md:w-[90%] lg:w-[80%] max-w-full px-4 sm:px-8 md:px-16 lg:px-24">
       <InfoCard type="phone" text="(11) 99999-9999" />
       <InfoCard type="whatz" text="(11) 99999-8888" />
       <InfoCard type="email" text="email@example.com" />

@@ -1,22 +1,29 @@
-import logo from "/Logo.png";
-import home from "/home.png";
-import fotinha from "/fotinha.png";
-import { Check } from "../Check";
-import { Lis } from "../Lis";
-import { Watz } from "../AssistantComponents/Watz";
-import { Newcheck } from "../Newcheck";
-import { Testimonials } from "../Testimonials";
-import aboutme from "/aboutme.png";
-import bgcell from "/bgcell.png";
-import googleStar from "/googleStar.webp";
-import bgcallme from "/bgcallme.png";
-import { Contact } from "../contact";
-import { FaWhatsapp } from "react-icons/fa";
-import { Treatments } from "../treatments";
-import { AnimatedText } from "../AnimatedComponents/AnimatedText";
-import teeth from "/teeth.jpg";
-import { AnimatedUnderline } from "../AnimatedComponents/AnimatedUnderline";
-import { Local } from "../Local";
+import {
+  logo,
+  home,
+  fotinha,
+  aboutme,
+  bgcell,
+  googleStar,
+  bgcallme,
+  teeth,
+  FaWhatsapp,
+} from "../../assents.js";
+
+import {
+  Check,
+  Lis,
+  Watz,
+  Newcheck,
+  Testimonials,
+  Contact,
+  Treatments,
+  AnimatedText,
+  AnimatedUnderline,
+  Local,
+} from "../../components.js";
+
+
 
 export function Header() {
   return (
@@ -93,7 +100,7 @@ export function Header() {
         <section className="flex flex-col items-center  bg-white w-[110%] ">
           {/* div com Fundo Personalizado */}
           <div
-            className="flex flex-col  relative w-[110%] h-screen bg-cover bg-center bg-no-repeat items-center justify-center px-6"
+            className="flex flex-col  relative w-[110%] h-screen bg-cover bg-center bg-no-repeat items-center justify-center px- sm:px-12 md:px-16 lg:px-20"
             style={{
               backgroundImage: `url(${bgcell})`,
             }}
@@ -107,7 +114,7 @@ export function Header() {
           </div>
         </section>
         {/* Seção de Depoimentos / Google Star */}
-        <section className=" flex flex-col gap-[100px] bg-white pt-[40px] w-[110%] items-center justify-center">
+        <section className=" flex flex-col gap-[100px] bg-white pt-[40px] w-[115%] items-center justify-center">
           <div className="flex flex-col items-center">
             {/* Logo do Google */}
             <img
@@ -129,14 +136,18 @@ export function Header() {
         </section>
 
         {/* Seção de entre em contato / telefone, email */}
-        <section className="flex flex-col relative w-[110%] items-center h-[637px]">
+        <section className="flex flex-col relative w-[120%] items-center min-h-[637px]">
           <div
-            className="flex flex-col relative w-[95%] h-screen bg-cover bg-center bg-no-repeat items-center justify-center px-6 "
+            className="flex flex-col relative w-full max-w-[95%] min-h-screen bg-cover bg-center bg-no-repeat items-center justify-center px-4 sm:px-8 md:px-16 lg:px-24 
+    max-[390px]:px-10" // Adiciona mais espaçamento para telas até 390px
             style={{
               backgroundImage: `url(${bgcallme})`,
             }}
           >
-            <div className="w-[90%] max-w-[400px] bg-[#A98964]/40  rounded-[8px] p-6 border border-[#EFECE3]/50 flex flex-col items-center gap-4">
+            <div
+              className="w-[90%] max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] bg-[#A98964]/40 rounded-[8px] p-6 border border-[#EFECE3]/50 flex flex-col items-center gap-4 transition-all duration-300 ease-in-out
+    max-[390px]:w-80" // Adiciona mais padding interno para a caixa
+            >
               <h2 className="text-[#EFECE3] text-[28px] font-semibold text-center">
                 Entre em Contato Comigo!
               </h2>
