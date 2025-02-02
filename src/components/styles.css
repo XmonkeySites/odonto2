@@ -1,0 +1,36 @@
+
+
+/* Estilo para os bullets de paginação */
+.swiper-pagination-bullet {
+  background-color: #9e9b98 !important; /* Cor personalizada para os bullets */
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #010101 !important; /* Cor do bullet ativo */
+  transform: scale(1.3) !important; /* Destaca o bullet ativo */
+}
+
+/* Ajuste da posição dos bullets */
+.swiper-pagination {
+  bottom: -5px !important; /* Ajusta a posição vertical dos bullets */
+}
+
+/* Ajuste das setas de navegação */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #010101 !important; /* Define a cor das setas */
+  font-size: 10px !important; /* Aumenta o tamanho das setas */
+  width: 50px !important; /* Define a largura da área de clique */
+  height: 50px !important; /* Define a altura da área de clique */
+  
+}
+
+/* Força o alinhamento das setas */
+.swiper-button-prev {
+  left: 10px !important; /* Ajusta a posição da seta esquerda */
+}
+
+.swiper-button-next {
+  right: 10px !important; /* Ajusta a posição da seta direita */
+}
