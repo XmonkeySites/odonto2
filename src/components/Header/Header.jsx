@@ -1,9 +1,9 @@
 import logo from "/Logo.png";
 import home from "/home.png";
 import fotinha from "/fotinha.png";
-import { Check } from "../check";
-import { Lis } from "../lis";
-import { Watz } from "../watz";
+import { Check } from "../Check";
+import { Lis } from "../Lis";
+import { Watz } from "../AssistantComponents/Watz";
 import { Newcheck } from "../Newcheck";
 import { Testimonials } from "../Testimonials";
 import aboutme from "/aboutme.png";
@@ -13,9 +13,9 @@ import bgcallme from "/bgcallme.png";
 import { Contact } from "../contact";
 import { FaWhatsapp } from "react-icons/fa";
 import { Treatments } from "../treatments";
-import { AnimatedText } from "../animatedtext";
+import { AnimatedText } from "../AnimatedComponents/AnimatedText";
 import teeth from "/teeth.jpg";
-import { AnimatedUnderline } from "../AnimatedUnderline";
+import { AnimatedUnderline } from "../AnimatedComponents/AnimatedUnderline";
 import { Local } from "../Local";
 
 export function Header() {
@@ -34,81 +34,64 @@ export function Header() {
         </p>
       </div>
 
-      {/* Informações da Dra. Adriana */}
-      <div className="flex gap-5 items-center">
-        <img
-          className="w-[61.26px] h-[61.26px]"
-          src={fotinha}
-          alt="Dra. Adriana Libório"
-        />
-        <span className="text-[#9B7549] font-sans text-[14px]">
-          Dra. Adriana Libório | Ortodontista CRO 6176 Especialista pela UFBA |
-          Invisalign Doctor
-        </span>
-      </div>
-
-      {/* Botão WhatsApp */}
-      <Watz />
-
-      {/* Seção com ícone de Check e retângulo */}
-      <div>
-        <img src={home} alt="Imagem de fundo" className="w-full" />
-        <div className="flex flex-col relative w-full px-4 gap-[100px]">
-          <Check
-            title="Aparelhos Ortodônticos Fixos"
-            paragraph="Corrigem o alinhamento dentário de forma precisa e eficiente."
+      <section className="flex flex-col gap-10">
+        {/* Informações da Dra. Adriana */}
+        <div className="flex gap-5 items-center">
+          <img
+            className="w-[61.26px] h-[61.26px]"
+            src={fotinha}
+            alt="Dra. Adriana Libório"
           />
-          <Check
-            title="Invisalign"
-            paragraph="Alinhadores modernos, transparentes e confortáveis para o dia a dia."
-          />
-          <Check
-            title="Esthetic Aligner"
-            paragraph="Discreto e personalizado para melhorar a estética do seu sorriso."
-          />
+          <span className="text-[#9B7549] font-sans text-[14px]">
+            Dra. Adriana Libório | Ortodontista CRO 6176 Especialista pela UFBA
+            | Invisalign Doctor
+          </span>
         </div>
-      </div>
 
-      {/* Título "Para Que é?" */}
-      <div className="flex justify-center text-[#9B7549] font-[600] text-[29px]">
-        Para Que é?
-      </div>
+        {/* Botão WhatsApp */}
+        <Watz />
+      </section>
+      {/* Seção com ícone de Check e retângulo */}
+      <section>
+        <div>
+          <img src={home} alt="Imagem de fundo" className="w-full" />
+          <Check />
+        </div>
+      </section>
 
-      {/* Lista de Benefícios */}
-      <div className="flex flex-col gap-[30px]">
-        <Lis
-          title="Dentes desalinhados?"
-          paragraph="Oferecemos soluções que devolvem harmonia ao seu sorriso."
-        />
-        <Lis
-          title="Desconforto com o uso do aparelho?"
-          paragraph="Desconforto com o uso do aparelho?"
-        />
-        <Lis
-          title="Procurando por discrição?"
-          paragraph="Invisalign e Esthetic Aligner são perfeitos para você!"
-        />
-      </div>
+      {/* Título "Para Que é? , Lista de Benefícios " */}
+      <section className="flex flex-col gap-7 ">
+        <div className="flex flex-col justify-center text-[#9B7549] font-[600] text-[29px] gap-2.5">
+          <span className="text-center">Para Quem é?</span>
+          <hr className="w-[40%] mx-auto border-[#9B7549] bg-[#9B7549]  border-t-[2.5px]" />
+        </div>
+
+        <Lis />
+      </section>
 
       {/* Seção "Sobre Mim" */}
-      <div className="flex flex-col gap-[37px] pb-[33px]">
-        <h2 className="flex justify-center text-[33px] text-[#9B7549] font-[500]">
-          Sobre Mim
-        </h2>
-        <img src={aboutme} alt="Dra. Adriana" />
-        <p className="text-[14px] text-[#9B7549] font-[300]">
-          Sou a Dra. Adriana Libório, especialista em ortodontia pela UFBA, com
-          anos de experiência na criação de sorrisos mais saudáveis e
-          confiantes. Sou também Invisalign Doctor e trabalho com as mais
-          avançadas tecnologias de alinhamento dental e estética orofacial. Meu
-          compromisso vai além de apenas corrigir dentes — estou aqui para
-          transformar vidas, uma pessoa de cada vez.
-        </p>
-        <Watz />
-      </div>
+      <section>
+        <div className="flex flex-col gap-[37px] pb-[33px]">
+          <h2 className="flex justify-center text-[33px] text-[#9B7549] font-[500]">
+            Sobre Mim
+          </h2>
+          <img src={aboutme} alt="Dra. Adriana" />
+          <p className="text-[14px] text-[#9B7549] font-[300]">
+            Sou a Dra. Adriana Libório, especialista em ortodontia pela UFBA,
+            com anos de experiência na criação de sorrisos mais saudáveis e
+            confiantes. Sou também Invisalign Doctor e trabalho com as mais
+            avançadas tecnologias de alinhamento dental e estética orofacial.
+            Meu compromisso vai além de apenas corrigir dentes — estou aqui para
+            transformar vidas, uma pessoa de cada vez.
+          </p>
+          <Watz />
+        </div>
+      </section>
+      {/*section para manter a bg branco*/}
       <section className=" flex  flex-col items-center justify-center">
-        {/* Seção com Fundo Personalizado */}
+        {/*section dos Checks*/}
         <section className="flex flex-col items-center  bg-white w-[110%] ">
+          {/* div com Fundo Personalizado */}
           <div
             className="flex flex-col  relative w-[110%] h-screen bg-cover bg-center bg-no-repeat items-center justify-center px-6"
             style={{
@@ -120,14 +103,7 @@ export function Header() {
             </h2>
 
             {/* Container com Fundo Transparente e Sem Borda */}
-            <div className="pt-2.5 relative w-[90%] max-w-[500px] bg-[#EFECE3]/10 rounded-[20px] p-8 flex flex-col items-center">
-              <div className="flex flex-col items-center gap-10">
-                <Newcheck text="Suporte exclusivo" />
-                <Newcheck text="Tecnologia de ponta" />
-                <Newcheck text="Experiência sólida" />
-                <Newcheck text="Resultados comprovados" />
-              </div>
-            </div>
+            <Newcheck />
           </div>
         </section>
         {/* Seção de Depoimentos / Google Star */}
@@ -180,6 +156,8 @@ export function Header() {
           </div>
         </section>
       </section>
+      {/*fim da section para manter a bg branco*/}
+      {/*ver a transformação que cada dente tem*/}
       <section className="flex flex-col items-center gap-7">
         <AnimatedText />
         <h2 className="font-semibold text-[24px] text-[#9B7549] text-center">
@@ -187,6 +165,8 @@ export function Header() {
         </h2>
         <Treatments />
       </section>
+
+      {/*Paragrafo sobre a historia do sorriso*/}
       <section className="flex flex-col gap-7 items-center px-[2px] leading-[35px] pt-15 pb-[75px]">
         <div className="flex flex-col">
           <h2 className="text-[31px] font-semibold text-center text-[#9B75498A]">
@@ -209,6 +189,8 @@ export function Header() {
         />
         <Watz className="h-[10px] max-h-[10px] w-[50px] " />
       </section>
+
+      {/*maps mais informações de contato*/}
       <section className="flex flex-col items-center  bg-[#9B7549] w-[110%] pb-[20px] gap-5">
         <h2 className="text-white text-[26px] font-semibold">
           Nossa Localização:

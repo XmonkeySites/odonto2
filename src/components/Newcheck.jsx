@@ -1,6 +1,6 @@
 import check from '/checks.webp'
 
-export function Newcheck({text}){
+ function StyleNewcheck({text}){
 
     return (
         
@@ -10,7 +10,18 @@ export function Newcheck({text}){
 </div>
 )
 
+}
 
 
-
+export function Newcheck(){
+return (
+  <div className="pt-2.5 relative w-[90%] max-w-[500px] bg-[#EFECE3]/10 rounded-[20px] p-8 flex flex-col items-center">
+    <div className="flex flex-col items-center gap-10">
+      <StyleNewcheck text="Suporte exclusivo" />
+      <StyleNewcheck text="Tecnologia de ponta" />
+      <StyleNewcheck text="Experiência sólida" />
+      <StyleNewcheck text="Resultados comprovados" />
+    </div>
+  </div>
+);
 }
