@@ -1,24 +1,18 @@
 import { FaCheck } from "react-icons/fa6";
 
-
-
-
-
- function StyleCheck({ title, paragraph }) {
+function StyleCheck({ title, paragraph }) {
   return (
-    <div className="relative flex flex-col bg-[#9B7549] p-[30px] w-full rounded-[20px] mt-[-30px] gap-5">
-      <FaCheck className="absolute bg-white top-[-2rem] text-[2rem] p-2 rounded-full text-black w-[50px] h-[50px]" />
-      <h3 className=" text-[#EFECE3] text-[22px] font-[600]">{title}</h3>
-      <p className="text-[#EFECE3] text-[16px] font-[300]">{paragraph}</p>
+    <div className="relative flex flex-col bg-[#9B7549] p-[1.875rem] w-full rounded-[1.25rem] gap-5 xl:max-w-full xl:flex-1">
+      <FaCheck className="absolute bg-white top-[-1.5rem] left-5 text-[2rem] p-2 rounded-full text-black w-[3.125rem] h-[3.125rem]" />
+      <h3 className="text-[#EFECE3] text-[1.375rem] font-semibold">{title}</h3>
+      <p className="text-[#EFECE3] text-[1rem] font-light">{paragraph}</p>
     </div>
   );
 }
- 
 
-
-export function Check(){
+export function Check() {
   return (
-    <div className="flex flex-col relative w-full px-4 gap-[100px]">
+    <div className="flex flex-col w-full px-4 gap-10 xl:flex xl:flex-row xl:gap-5 xl:items-center xl:justify-center 2xl:px-[2.8125rem]">
       <StyleCheck
         title="Aparelhos Ortodônticos Fixos"
         paragraph="Corrigem o alinhamento dentário de forma precisa e eficiente."
@@ -34,10 +28,3 @@ export function Check(){
     </div>
   );
 }
-
-
-
-
-
-
-
