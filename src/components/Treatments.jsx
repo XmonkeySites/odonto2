@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import teeth from "/teeth.jpg";
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+import aparelho from "/aparelho.png";
+import semAparelho from "/semAparelho.png";
 import { IoMdArrowDropright, IoMdArrowDropup } from "react-icons/io";
 
 const treatmentsData = [
@@ -7,39 +9,33 @@ const treatmentsData = [
     id: "1",
     title: "Aparelhos Ortodônticos Fixos",
     description: "Corrija alinhamento dentário com precisão e eficiência.",
-    image: teeth,
   },
   {
     id: "2",
     title: "Invisalign",
     description:
       "Alinhadores transparentes e confortáveis, ideais para quem busca discrição.",
-    image: teeth,
   },
   {
     id: "3",
     title: "Esthetic Aligner",
     description: "Tratamento estético avançado para um sorriso harmonioso.",
-    image: teeth,
   },
   {
     id: "4",
     title: "Aparelhos Estéticos",
     description: "Opções discretas e elegantes, perfeitas para o dia a dia.",
-    image: teeth,
   },
   {
     id: "5",
     title: "Harmonização Orofacial",
     description:
       "Procedimentos minimamente invasivos para realçar a beleza do rosto.",
-    image: teeth,
   },
   {
     id: "6",
     title: "Clareamento Dental",
     description: "Um sorriso mais branco e iluminado.",
-    image: teeth,
   },
 ];
 
@@ -58,10 +54,10 @@ export function Treatments() {
           key={treatment.id}
           className="flex flex-col items-start gap-4 px-[20px] max-w-[350px]"
         >
-          {/* Imagem acima do título */}
-          <img
-            src={treatment.image}
-            alt={treatment.title}
+          {/* Slider de comparação acima do título */}
+          <ReactCompareSlider
+            itemOne={<ReactCompareSliderImage src={aparelho} srcSet="" alt="Com aparelho" />}
+            itemTwo={<ReactCompareSliderImage src={semAparelho} srcSet="" alt="Sem aparelho" />}
             className="min-w-[340px] min-h-[160px] max-w-[350px] max-h-[190px] rounded-[20px]"
           />
 

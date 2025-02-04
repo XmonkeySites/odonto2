@@ -1,4 +1,7 @@
 import bg from "/bg.png";
+import aparelho from "/aparelho.png";
+import semAparelho from "/semAparelho.png";
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import {
   homebgpc,
   homebgmac,
@@ -35,50 +38,46 @@ export function Header() {
     <section className="flex flex-col items-center justify-center h-auto gap-0 bg-[#EFECE3] ">
       {/* Logo Centralizado */}
       <section
-        className="flex flex-col gap-10 px-[1rem] items-center xl:flex-row 2xl:px-[3.75rem] w-full"
-        style={{ backgroundImage: `url(${bg})` }}
-      >
-        <div className="relative flex flex-col items-center">
-          <div className="pt-[5rem] flex flex-col items-center mt-5">
-            <img className="w-[11.5rem] h-[5.375rem]" src={logo} alt="Logo" />
-            <h2 className="font-sans font-extrabold text-[2.3125rem] text-[#9B7549] mt-2 text-center">
-              O SORRISO QUE VOCÊ MERECE ESTÁ AQUI!
-            </h2>
-            <p className="text-center text-[#9B7549] font-sans font-light max-w-[22.5rem]">
-              Agende sua consulta agora e tenha acesso aos melhores tratamentos
-              ortodônticos, com tecnologia avançada e cuidado especializado. Sua
-              transformação começa hoje!
-            </p>
-          </div>
+  className="flex flex-col gap-10 px-[1rem] items-center xl:flex-row 2xl:px-[3.75rem] w-full"
+  style={{ backgroundImage: `url(${bg})` }}
+>
+  <div className="relative flex flex-col items-center">
+    <div className="pt-[5rem] flex flex-col items-center mt-5">
+      <img className="w-[11.5rem] h-[5.375rem]" src={logo} alt="Logo" />
+      <h2 className="font-sans font-extrabold text-[2.3125rem] text-[#9B7549] mt-2 text-center">
+        O SORRISO QUE VOCÊ MERECE ESTÁ AQUI!
+      </h2>
+      <p className="text-center text-[#9B7549] font-sans font-light max-w-[22.5rem]">
+        Agende sua consulta agora e tenha acesso aos melhores tratamentos
+        ortodônticos, com tecnologia avançada e cuidado especializado. Sua
+        transformação começa hoje!
+      </p>
+    </div>
 
-          {/* Informações da Dra. Adriana */}
-          <div className="flex gap-5 items-center mt-4">
-            <img
-              className="w-[3.83rem] h-[3.83rem]"
-              src={fotinha}
-              alt="Dra. Adriana Libório"
-            />
-            <span className="text-[#9B7549] font-sans text-[0.875rem]">
-              Dra. Adriana Libório | Ortodontista CRO 6176 Especialista pela
-              UFBA | Invisalign Doctor
-            </span>
-          </div>
+    {/* Informações da Dra. Adriana */}
+    <div className="flex gap-5 items-center mt-4">
+      <img
+        className="w-[3.83rem] h-[3.83rem]"
+        src={fotinha}
+        alt="Dra. Adriana Libório"
+      />
+      <span className="text-[#9B7549] font-sans text-[0.875rem]">
+        Dra. Adriana Libório | Ortodontista CRO 6176 Especialista pela
+        UFBA | Invisalign Doctor
+      </span>
+    </div>
 
-          {/* Botão WhatsApp */}
-          <Watz />
-        </div>
+    {/* Botão WhatsApp */}
+    <Watz />
+  </div>
 
-        <img
-          src={home}
-          alt=""
-          className="relative w-full md:w-[28.125rem] xl:w-[33.125rem]"
-        />
-      </section>
+  <img src={home} alt="" className="relative w-full md:w-[28.125rem] xl:w-[33.125rem]" />
+</section>
 
       {/* Seção com ícone de Check e retângulo */}
       <section className="flex flex-col items-center justify-center w-full px-[0.9375rem]">
-        <Check />
-      </section>
+  <Check />
+</section>
 
       {/* Título "Para Que é? , Lista de Benefícios " */}
       {/* Seção "Para Quem é?" */}
@@ -141,57 +140,51 @@ export function Header() {
       <section className=" flex  flex-col items-center md:mt-0 pt-0 w-full">
         {/*section dos Checks*/}
         <section className="flex flex-col items-center md:mt-0 pt-0 w-full">
-          {/* Section dos Checks */}
-          <section className="flex flex-col items-center bg-white w-full mt-5 md:mt-0 md:h-[18.75rem] xl:h-[23.75rem]">
-            {/* Div com Fundo Personalizado */}
-            <div className="flex flex-col relative w-full h-screen bg-cover bg-center bg-no-repeat items-center justify-center px- sm:px-12 md:px-5 lg:px-20">
-              <picture>
-                {/* Imagens responsivas */}
-                <source srcSet={bgpc} media="(min-width: 1281px)" />
-                <source
-                  srcSet={bgmac}
-                  media="(min-width: 501px) and (max-width: 1280px)"
-                />
-                <img
-                  src={bgcell}
-                  alt="Background"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </picture>
-              <h2 className="relative text-[1.5625rem] font-bold text-center text-[#EFECE3]">
-                Por que me contratar?
-              </h2>
+  {/* Section dos Checks */}
+  <section className="flex flex-col items-center bg-white w-full mt-5 md:mt-0 md:h-[18.75rem] xl:h-[23.75rem]">
+    {/* Div com Fundo Personalizado */}
+    <div className="flex flex-col relative w-full h-screen bg-cover bg-center bg-no-repeat items-center justify-center px- sm:px-12 md:px-5 lg:px-20">
+      <picture>
+        {/* Imagens responsivas */}
+        <source srcSet={bgpc} media="(min-width: 1281px)" />
+        <source srcSet={bgmac} media="(min-width: 501px) and (max-width: 1280px)" />
+        <img src={bgcell} alt="Background" className="absolute inset-0 w-full h-full object-cover" />
+      </picture>
+      <h2 className="relative text-[1.5625rem] font-bold text-center text-[#EFECE3]">
+        Por que me contratar?
+      </h2>
 
-              {/* Container com Fundo Transparente e Sem Borda */}
-              <Newcheck />
-            </div>
-          </section>
-        </section>
+      {/* Container com Fundo Transparente e Sem Borda */}
+      <Newcheck />
+    </div>
+  </section>
+</section>
 
         {/* Seção de Depoimentos / Google Star */}
         <section className="flex flex-col gap-[6.25rem] bg-white pt-[2.5rem] w-full items-center justify-center md:gap-0 sm:grid sm:grid-cols-2 md:pr-10">
-          <div className="flex flex-col items-center md:pl-12 md:translate-y-[-1.25rem]">
-            {/* Logo do Google */}
-            <img
-              className="w-[7.9375rem] h-[3.9375rem] mt-2"
-              src={googleStar}
-              alt="Google Star"
-            />
+  <div className="flex flex-col items-center md:pl-12 md:translate-y-[-1.25rem]">
+    {/* Logo do Google */}
+    <img
+      className="w-[7.9375rem] h-[3.9375rem] mt-2"
+      src={googleStar}
+      alt="Google Star"
+    />
 
-            {/* Título */}
-            <h2 className="pt-[0.625rem] font-medium text-[1.5625rem] text-[#0F223C] text-center mt-2">
-              O que dizem meus pacientes
-            </h2>
-          </div>
+    {/* Título */}
+    <h2 className="pt-[0.625rem] font-medium text-[1.5625rem] text-[#0F223C] text-center mt-2">
+      O que dizem meus pacientes
+    </h2>
+  </div>
 
-          {/* Slider de Depoimentos */}
-          <div className="translate-y-[-2.5rem] 2xl:translate-y-0 xl:w-[80%] flex items-center">
-            <Testimonials />
-          </div>
-        </section>
+  {/* Slider de Depoimentos */}
+  <div className="translate-y-[-2.5rem] 2xl:translate-y-0 xl:w-[80%] flex items-center">
+    <Testimonials />
+  </div>
+</section>
+
 
         {/* Seção de entre em contato / telefone, email */}
-        <section className="flex flex-col relative w-full items-center h-[637px] xl:h-[590px]">
+        <section className="flex flex-col relative w-full items-center h-[637px] sm:h-[px]  xl:h-[590px]">
           {/* 🔹 Contêiner Responsável pela Imagem de Fundo */}
           <div className="relative w-full h-screen flex flex-col items-center justify-center px-4 sm:px-8 md:px-16 lg:px-24 max-[390px]:px-10 xl:w-full xl:h-[590px]">
             {/* 🔹 Imagem de Fundo Responsiva */}
@@ -209,29 +202,33 @@ export function Header() {
             </picture>
 
             {/* 🔹 Conteúdo Sobre a Imagem */}
-            <div className="relative w-[90%] max-w-[43.75rem] bg-[#A98964]/40 rounded-[0.5rem] p-6 border border-[#EFECE3]/50 flex flex-col items-center gap-4 transition-all duration-300 ease-in-out sm:w-[95%] md:w-[85%] lg:w-[43.75rem] xl:w-[37.5rem] 2xl:w-[46.875rem]">
-              <h2 className="text-[#EFECE3] text-[1.5rem] font-semibold text-center sm:text-[1.625rem] md:text-[1.75rem] lg:text-[1.875rem] xl:text-[2rem] z-[99]">
-                Entre em Contato Comigo!
-              </h2>
-              <h3 className="text-[#EFECE3] text-[0.875rem] font-extralight sm:text-[0.9375rem] md:text-[1rem] lg:text-[1.0625rem] xl:text-[1.125rem]">
-                Estamos perto de você!
-              </h3>
-              <Contact />
-              <div className="flex items-center justify-center w-full min-h-[3.125rem] sm:min-h-[3.75rem] md:min-h-[4.375rem] py-2 bg-[#2AA716] rounded-full mt-[1.25rem] md:w-[21.25rem] lg:w-[23.75rem] xl:w-[25rem]">
-                <a href="#" className="flex items-center gap-2">
-                  <FaWhatsapp className="w-[1.25rem] h-[1.25rem] sm:w-[1.5625rem] sm:h-[1.5625rem] lg:w-[1.875rem] lg:h-[1.875rem] text-white" />
-                  <span className="text-white text-[0.875rem] font-medium sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem]">
-                    Fale comigo no Whatsapp
-                  </span>
-                </a>
-              </div>
-            </div>
+            <div className="relative w-[90%] max-w-[43.75rem] bg-[#A98964]/40 rounded-[0.5rem] p-6 border border-[#EFECE3]/50 flex flex-col items-center gap-4 sm:gap-[0.5rem] md:gap-4 transition-all duration-300 ease-in-out sm:w-[75%] sm:size-95  md:flex-col md:size-auto md:w-[85%] lg:w-[43.75rem] xl:w-[37.5rem] 2xl:w-[46.875rem]">
+    <div className="flex flex-col items-center">
+
+     <h2 className="text-[#EFECE3] text-[1.5rem] font-semibold text-center sm:text-[1.625rem] md:text-[1.75rem] lg:text-[1.875rem] xl:text-[2rem] z-[99]">
+        Entre em Contato Comigo!
+      </h2>
+      <h3 className="text-[#EFECE3] text-[0.875rem] font-extralight sm:text-[0.9375rem] md:text-[1rem] lg:text-[1.0625rem] xl:text-[1.125rem]">
+        Estamos perto de você!
+      </h3>
+      <Contact />
+    </div>
+    <div className=" sm:size-70 md:size-auto  flex flex-col sm:flex-row md:flex-col items-center justify-center w-full min-h-[3.125rem] sm:min-h-[2rem] md:min-h-[4.375rem] py-2 bg-[#2AA716] rounded-full  mt-[1.25rem] sm:mt-0 md:mt-[1.25rem] md:w-[21.25rem] lg:w-[23.75rem] xl:w-[25rem]">
+  <a href="#" className="flex items-center gap-2">
+    <FaWhatsapp className="w-[1.25rem] h-[1.25rem] sm:w-[1.5625rem] sm:h-[1.5625rem] lg:w-[1.875rem] lg:h-[1.875rem] text-white" />
+    <span className="text-white text-[0.875rem] font-medium sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem]">
+      Fale comigo no Whatsapp
+    </span>
+  </a>
+</div>
+
+    </div>
           </div>
         </section>
       </section>
       {/*fim da section para manter a bg branco*/}
       {/*ver a transformação que cada dente tem*/}
-      <section className="flex flex-col items-center gap-7 mt-[7rem]  md:mt-[0rem] xl:mt-[8rem] lg:mt-[10rem] 2xl:mt-[13rem]">
+      <section className="flex flex-col items-center gap-7 mt-[4rem] ">
         <AnimatedText />
         <h2 className="font-semibold text-[24px] text-[#9B7549] text-center xl:text-[28px] md:px-50 xl:px-100">
           Tratamentos personalizados para transformar seu sorriso
@@ -255,11 +252,13 @@ export function Header() {
             transformação.
           </p>
         </div>
-        <img
-          className="w-[240px] h-[140px] rounded-[10px] md:w-[500px] md:h-[285px] xl:w-[752px] xl:h-[423px]"
-          src={teeth}
-          alt=""
-        />
+
+        <ReactCompareSlider
+      itemOne={<ReactCompareSliderImage src={aparelho} srcSet="" alt="Image one" />}
+      itemTwo={<ReactCompareSliderImage src={semAparelho} srcSet="" alt="Image two" />}
+    className="w-[240px] h-[140px] rounded-[10px] md:w-[500px] md:h-[285px] xl:w-[752px] xl:h-[423px]"/>
+
+
         <Watz />
       </section>
 
