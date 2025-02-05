@@ -1,4 +1,11 @@
 import bg from "/bg.png";
+import '@fontsource/sora';
+import '@fontsource/sora/800.css';
+import '@fontsource/montserrat/600.css';
+import '@fontsource/sora/700.css';
+import '@fontsource/sora/600.css';
+import '@fontsource/sora/300.css';
+import '@fontsource/sora/200.css';
 import aparelho from "/aparelho.png";
 import semAparelho from "/semAparelho.png";
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
@@ -38,16 +45,16 @@ export function Header() {
     <section className="flex flex-col items-center justify-center h-auto gap-0 bg-[#EFECE3] ">
       {/* Logo Centralizado */}
       <section
-  className="flex flex-col gap-10 px-[1rem] items-center xl:flex-row 2xl:px-[3.75rem] w-full"
+  className="flex flex-col gap-10 px-[1rem] items-center xl:flex-row 2xl:px-[3.75rem] w-full "
   style={{ backgroundImage: `url(${bg})` }}
 >
-  <div className="relative flex flex-col items-center">
-    <div className="pt-[5rem] flex flex-col items-center mt-5">
-      <img className="w-[11.5rem] h-[5.375rem]" src={logo} alt="Logo" />
-      <h2 className="font-sans font-extrabold text-[2.3125rem] text-[#9B7549] mt-2 text-center">
+  <div className="relative flex flex-col items-center xl:items-center xl:self-center 2xl:self-start 2xl:pl-[10rem] ">
+    <div className="pt-[5rem] flex flex-col items-center xl:items-center 2xl:self-start xl:self-center">
+      <img className="w-[11.5rem] h-[5.375rem] xl:item 2xl:w-[23.5rem] 2xl:h-auto 2xl:relative 2xl:right-[11rem]" src={logo} alt="Logo" />
+      <h2 className="font- font-extrabold text-[2.5rem] text-[#9B7549] mt-2 text-center xl:text-center 2xl:text-left 2xl:text-[3rem]">
         O SORRISO QUE VOCÊ MERECE ESTÁ AQUI!
       </h2>
-      <p className="text-center text-[#9B7549] font-sans font-light max-w-[22.5rem]">
+      <p className="text-center text-[1.5rem] text-[#9B7549] font-light xl:text-center 2xl:text-left">
         Agende sua consulta agora e tenha acesso aos melhores tratamentos
         ortodônticos, com tecnologia avançada e cuidado especializado. Sua
         transformação começa hoje!
@@ -55,13 +62,13 @@ export function Header() {
     </div>
 
     {/* Informações da Dra. Adriana */}
-    <div className="flex gap-5 items-center mt-4">
+    <div className="flex gap-5 items-center mt-4 xl:self-center 2xl:self-start">
       <img
         className="w-[3.83rem] h-[3.83rem]"
         src={fotinha}
         alt="Dra. Adriana Libório"
       />
-      <span className="text-[#9B7549] font-sans text-[0.875rem]">
+      <span className="text-[#9B7549] text-[1rem] xl:text-center 2xl:text-left 2xl:text-[1.2rem] mb-[.5rem]">
         Dra. Adriana Libório | Ortodontista CRO 6176 Especialista pela
         UFBA | Invisalign Doctor
       </span>
@@ -71,8 +78,11 @@ export function Header() {
     <Watz />
   </div>
 
-  <img src={home} alt="" className="relative w-full md:w-[28.125rem] xl:w-[33.125rem]" />
+  <img src={home} alt="" className="relative w-full md:w-[28.125rem] xl:w-[33.125rem] 2xl:w-[37.7rem]" />
 </section>
+
+
+
 
       {/* Seção com ícone de Check e retângulo */}
       <section className="flex flex-col items-center justify-center w-full px-[0.9375rem]">
@@ -85,8 +95,8 @@ export function Header() {
       {/* Seção "Para Quem é?" */}
       <section className="flex flex-col gap-7 px-[15px] mt-5 md:grid md:grid-cols-2 xl:flex xl:flex-row md:px-0 md:pr-5 xl:gap-60 2xl:px-50">
         {/* Título e linha horizontal centralizados */}
-        <div className="flex flex-col items-center  text-[#9B7549] font-[600] text-[29px] gap-2.5 ">
-          <span className="text-center md:text-[40px] xl:text-[45px]">
+        <div className=" justify-start flex flex-col items-center  text-[#9B7549] font-[600] text-[29px] gap-2.5 ">
+          <span className="text-center md:text-[40px] xl:text-[2.7rem] 2xl:whitespace-nowrap">
             Para Quem é?
           </span>
 
@@ -205,7 +215,7 @@ export function Header() {
             <div className="relative w-[90%] max-w-[43.75rem] bg-[#A98964]/40 rounded-[0.5rem] p-6 border border-[#EFECE3]/50 flex flex-col items-center gap-4 sm:gap-[0.5rem] md:gap-4 transition-all duration-300 ease-in-out sm:w-[75%] sm:size-95  md:flex-col md:size-auto md:w-[85%] lg:w-[43.75rem] xl:w-[37.5rem] 2xl:w-[46.875rem]">
     <div className="flex flex-col items-center">
 
-     <h2 className="text-[#EFECE3] text-[1.5rem] font-semibold text-center sm:text-[1.625rem] md:text-[1.75rem] lg:text-[1.875rem] xl:text-[2rem] z-[99]">
+     <h2 className="font-[montserrat] text-[#EFECE3] text-[1.5rem] font-semibold text-center sm:text-[1.625rem] md:text-[1.75rem] lg:text-[1.875rem] xl:text-[2rem] z-[99]">
         Entre em Contato Comigo!
       </h2>
       <h3 className="text-[#EFECE3] text-[0.875rem] font-extralight sm:text-[0.9375rem] md:text-[1rem] lg:text-[1.0625rem] xl:text-[1.125rem]">

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import '@fontsource/sora';
 
 
 @keyframes fadeLeftRight {
@@ -11,8 +12,9 @@
   animation: fadeLeftRight 3s infinite ease-in-out;
 }
 
-
-
+body{
+  font-family: 'sora', sans-serif;
+}
 
 
 /* @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap'); */

@@ -29,8 +29,8 @@ function InfoCard({ type, text }) {
     type === "insta"
       ? "w-[13rem] min-h-[2.5rem]  xl:w-[20rem]" // Box menor para Instagram
       : type === "email"
-      ? "min-w-[16rem] min-h-[3.25rem] xl:w-[26rem]" // Box maior para Email
-      : "min-w-[15rem] min-h-[2.938rem] xl:w-[23rem] "; // Box padrão para os outros
+      ? "min-w-[16rem] min-h-[2.938rem] xl:w-[26rem]" // Box maior para Email
+      : "min-w-[16rem] min-h-[2.938rem] xl:w-[26rem] "; // Box padrão para os outros
 
   return (
     <div
