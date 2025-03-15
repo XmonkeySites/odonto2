@@ -29,18 +29,22 @@ function InfoCard({ type, text }) {
 
 export function Local() {
   return (
-    <div className="flex flex-col items-center justify-center rounded-[8px] bg-[#EFECE32E] 
-      w-[350px] min-h-[200px] p-4 2xl:w-[450px] 2xl:min-h-[250px]">
+    <div
+      className="flex flex-col items-center justify-center rounded-[8px] bg-[#EFECE32E] 
+      w-[350px] min-h-[200px] p-4 2xl:w-[450px] 2xl:min-h-[250px]"
+    >
+      <InfoCard
+        type="local"
+        text="Rua da Alfazema, n 761 ed Iguatemi Business e Flat sala 101 e 110  Implant Day Clinic"
+      />
+      <hr className="w-[90%] mx-auto border-[#E4BD54] bg-[#E4BD54] border-t-[1px] my-2" />
 
-      <InfoCard type="local" text="Rua, Bairro, CEP" />
+      <InfoCard type="whatz" text="(11) 98788-7808" />
       <hr className="w-[90%] mx-auto border-[#E4BD54] bg-[#E4BD54] border-t-[1px] my-2" />
-      
-      <InfoCard type="whatz" text="(11) 99999-8888" />
-      <hr className="w-[90%] mx-auto border-[#E4BD54] bg-[#E4BD54] border-t-[1px] my-2" />
-      
+
       <InfoCard type="email" text="email@example.com" />
       <hr className="w-[90%] mx-auto border-[#E4BD54] bg-[#E4BD54] border-t-[1px] my-2" />
-      
+
       <InfoCard type="insta" text="draadrianaliborio" />
     </div>
   );

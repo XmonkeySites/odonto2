@@ -46,9 +46,8 @@ function InfoCard({ type, text }) {
 export function Contact() {
   return (
     <div className="flex flex-col gap-[20px] bg-transparent items-center  ">
-      <InfoCard type="phone" text="(11) 99999-9999" />
-      <InfoCard type="whatz" text="(11) 99999-8888" />
-      <InfoCard type="email" text="email@example.com" />
+      <InfoCard type="phone" text="(71) 3353-0100" />
+      <InfoCard type="whatz" text="(71) 98788-7808" />
       <InfoCard type="insta" text="draadrianaliborio" />
     </div>
   );

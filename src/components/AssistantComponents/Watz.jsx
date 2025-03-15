@@ -2,11 +2,15 @@ import watz from "/watz.webp";
 
 export function Watz(){
 return (
-  <div className="flex justify-center bg-[#9B7549] py-[22px] w-[85%] rounded-tl-[36px] rounded-tr-[2px] rounded-br-[36px] rounded-bl-[2px] max-h-[68px] xl:w-[347px] xl:h-[45px]">
-    <a href="" className="flex items-center gap-2">
+  <a
+    href="https://wa.me/5571987887808?text=Quero%20saber%20mais"
+    target="_blank"
+    className="flex items-center gap-2 w-full justify-center  "
+  >
+    <div className="flex items-center gap-2 justify-center bg-[#9B7549]  py-[22px] px-[1.5rem] rounded-tl-[36px] rounded-tr-[2px] rounded-br-[36px] rounded-bl-[2px] max-h-[68px] xl:w-[347px] xl:h-[45px]">
       <img className="invert w-[15px] h-[15px]" src={watz} alt="" />
       <span className="text-white">Transformar meu sorriso</span>
-    </a>
-  </div>
+    </div>
+  </a>
 );
 }

@@ -17,12 +17,30 @@ body{
 }
 
 
-/* @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap'); */
+/* Mudança de cor no hover */
+a:hover {
+  color: #ff4500; /* Laranja avermelhado */
+}
 
-/* @layer utilities {
-    :root {
-      --widgets-spacing: 20px 20px;
-      --widgets-spacing-row: 20px;
-      --widgets-spacing-column: 20px;
-    }
-  }; */
+/* Mudança de fundo no hover */
+a:hover {
+
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+/* Aumento do tamanho no hover */
+a:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Adição de sombra no hover */
+a:hover {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Adição de sublinhado no hover */
+

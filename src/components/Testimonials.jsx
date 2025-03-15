@@ -14,7 +14,7 @@ import "./styles.css";
 
 function Blockslider() {
   return (
-<div className="flex flex-col items-start bg-white rounded-lg shadow-lg border border-gray-200 p-5 gap-4  w-[80%] mx-auto xl:w-[90%] 2xl:h-auto">
+<div className="flex flex-col items-start bg-white rounded-lg shadow-lg border border-gray-200 p-5 gap-4  w-[80%] mx-auto xl:w-[90%] 2xl:h-[13.5rem]">
       <div className="flex items-center justify-between w-full">
         {/* User Info */}
         <div className="flex items-center gap-3">
