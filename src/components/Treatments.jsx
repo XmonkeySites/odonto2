@@ -3,44 +3,63 @@ import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
-import aparelho from "/aparelho.png";
-import semAparelho from "/semAparelho.png";
 import { IoMdArrowDropright, IoMdArrowDropup } from "react-icons/io";
 import { ScrollAnimation } from "./AnimatedComponents/ScrollAnimation";
-
+import ivisalignA from "/InvisalignA.webp";
+import ivisalignB from "/InvisalignB.webp";
+import clareamentoA from "/clareamentoA1x.webp";
+import clareamentoB from "/clareamentoB1x.webp";
+import alignerA from "/alignerA1x.webp";
+import alignerB from "/alignerB1x.webp";
+import discretoA from "/discretoA1x.webp";
+import discretoB from "/discretoB1x.webp";
+import aparelhoA from "/aparelhoA.webp";
+import aparelhoB from "/aparelhoB.webp";
 
 const treatmentsData = [
   {
     id: "1",
     title: "Aparelhos Ortodônticos Fixos",
     description: "Corrija alinhamento dentário com precisão e eficiência.",
+    beforeImage: aparelhoA, // Imagem de antes
+    afterImage: aparelhoB, // Imagem de depois
   },
   {
     id: "2",
     title: "Invisalign",
     description:
       "Alinhadores transparentes e confortáveis, ideais para quem busca discrição.",
+    beforeImage: ivisalignA, // Imagem de antes
+    afterImage: ivisalignB, // Imagem de depois
   },
   {
     id: "3",
     title: "Esthetic Aligner",
     description: "Tratamento estético avançado para um sorriso harmonioso.",
+    beforeImage: alignerA, // Imagem de antes
+    afterImage: alignerB, // Imagem de depois
   },
   {
     id: "4",
     title: "Aparelhos Estéticos",
     description: "Opções discretas e elegantes, perfeitas para o dia a dia.",
+    beforeImage: discretoA, // Imagem de antes
+    afterImage: discretoB, // Imagem de depois
   },
   {
     id: "5",
     title: "Interceptação Ortodôntica",
     description:
       "Correção precoce para guiar o desenvolvimento saudável do sorriso.",
+    beforeImage: ivisalignA, // Imagem de antes
+    afterImage: ivisalignB, // Imagem de depois
   },
   {
     id: "6",
     title: "Clareamento Dental",
     description: "Um sorriso mais branco e iluminado.",
+    beforeImage: clareamentoA, // Imagem de antes
+    afterImage: clareamentoB, // Imagem de depois
   },
 ];
 
@@ -52,7 +71,6 @@ export function Treatments() {
   };
 
   return (
-    
     <div className="flex flex-col items-center gap-8 px-4 md:grid md:grid-cols-2 xl:grid-cols-3">
       {/* Iteração dos tratamentos */}
       {treatmentsData.map((treatment, index) => (
@@ -65,16 +83,14 @@ export function Treatments() {
             <ReactCompareSlider
               itemOne={
                 <ReactCompareSliderImage
-                  src={aparelho}
-                  srcSet=""
-                  alt="Com aparelho"
+                  src={treatment.beforeImage}
+                  alt="Antes"
                 />
               }
               itemTwo={
                 <ReactCompareSliderImage
-                  src={semAparelho}
-                  srcSet=""
-                  alt="Sem aparelho"
+                  src={treatment.afterImage}
+                  alt="Depois"
                 />
               }
               className="min-w-[340px] min-h-[160px] max-w-[350px] max-h-[190px] rounded-[20px]"

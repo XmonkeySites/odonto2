@@ -12,9 +12,7 @@ import googleStar from "/googleStar.webp";
 import bgcallme from "/bgcallme.png";
 import bgcallmepc from "/bgcallmepc.png";
 import bgcallmemac from "/bgcallmemac.png";
-import teeth from "/teeth.jpg";
 
-// Importação de ícones
 import { FaWhatsapp } from "react-icons/fa";
 
 // Exportação das imagens e ícones
@@ -30,8 +28,8 @@ export {
   bgmac,
   googleStar,
   bgcallme,
-  teeth,
-  FaWhatsapp,
+FaWhatsapp,
+
   bgcallmepc,
   bgcallmemac,
 };

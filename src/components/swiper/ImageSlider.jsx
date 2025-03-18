@@ -39,7 +39,7 @@ const imageList = [
 
 export default function ImageSlider() {
   return (
-    <div className="flex flex-col items-center gap-10 py-10">
+    <div className="flex flex-col  items-center gap-10 py-10">
       {/* Primeira Linha - ScrollAnimation com SlideRight */}
       <ScrollAnimation type="slideRight">
         <div className="relative w-[90%] max-w-[1000px] bg-[#8B5E3C] p-4 rounded-lg">

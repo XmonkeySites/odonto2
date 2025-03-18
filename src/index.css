@@ -16,6 +16,11 @@ body{
   font-family: 'sora', sans-serif;
 }
 
+html, body {
+  overflow-x: hidden !important; /* Evita rolagem horizontal */
+  width: 100%;
+}
+
 
 /* Mudança de cor no hover */
 a:hover {

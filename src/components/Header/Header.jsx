@@ -1,17 +1,15 @@
 import bg from "/bg.png";
-import '@fontsource/sora';
-import '@fontsource/sora/800.css';
-import '@fontsource/montserrat/600.css';
-import '@fontsource/sora/700.css';
-import '@fontsource/sora/600.css';
-import '@fontsource/sora/300.css';
-import '@fontsource/sora/200.css';
+import "@fontsource/sora";
+import "@fontsource/sora/800.css";
+import "@fontsource/montserrat/600.css";
+import "@fontsource/sora/700.css";
+import "@fontsource/sora/600.css";
+import "@fontsource/sora/300.css";
+import "@fontsource/sora/200.css";
 
-import {ScrollAnimation} from "../AnimatedComponents/ScrollAnimation.jsx"
+import { ScrollAnimation } from "../AnimatedComponents/ScrollAnimation.jsx";
 
 import {
-  homebgpc,
-  homebgmac,
   logo,
   home,
   fotinha,
@@ -21,7 +19,6 @@ import {
   bgpc,
   googleStar,
   bgcallme,
-  teeth,
   FaWhatsapp,
   bgcallmemac,
   bgcallmepc,
@@ -89,13 +86,12 @@ export function Header() {
           className="relative w-full md:w-[28.125rem] xl:w-[33.125rem] 2xl:w-[37.7rem]"
         />
       </section>
-  
+
       {/* Seção com ícone de Check e retângulo */}
       <ScrollAnimation type="slideUp">
-
-      <section className="flex flex-col items-center justify-center w-full px-[0.9375rem]">
-        <Check />
-      </section>
+        <section className="flex flex-col items-center justify-center w-full px-[0.9375rem]">
+          <Check />
+        </section>
       </ScrollAnimation>
 
       {/* Título "Para Que é? , Lista de Benefícios " */}
@@ -272,8 +268,8 @@ export function Header() {
       </section>
 
       {/*Paragrafo sobre a historia do sorriso*/}
-      <section className="flex flex-col gap-7 items-center px-[2px] leading-[35px] pt-15 pb-[75px] md:leading-[45px]">
-        <div className="flex flex-col">
+      <section className="flex flex-col gap-7 w-[100vw] items-center px-[2px] leading-[35px] pt-15 pb-[75px] md:leading-[45px]">
+        <div className="flex flex-col w-[90%]">
           <h2 className="text-[31px] font-semibold text-center text-[#9B75498A] md:text-[41px]">
             Veja a transformação que um
           </h2>
@@ -289,7 +285,10 @@ export function Header() {
         </div>
 
         {/* vaia aq*/}
+        <div className="w-full overflow-hidden">
+
         <ImageSlider />
+        </div>
 
         <Watz />
       </section>
@@ -322,8 +321,8 @@ export function Header() {
           <Local />
 
           <a
-            href="https://wa.me/5571987887808?text=Quero%20saber%20mais"
-            target="_blank"
+            href="https://wa.me/5571983333931?text=Quero%20saber%20mais"
+        
             className="flex items-center gap-2"
           >
             <div
