@@ -12,19 +12,15 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import "./styles.css";
 
-function Blockslider() {
+function Blockslider({text,title}) {
   return (
 <div className="flex flex-col items-start bg-white rounded-lg shadow-lg border border-gray-200 p-5 gap-4  w-[80%] mx-auto xl:w-[90%] 2xl:h-[13.5rem]">
       <div className="flex items-center justify-between w-full">
         {/* User Info */}
         <div className="flex items-center gap-3">
-          <img
-            className="w-[3rem] h-[3rem] rounded-full"
-            src={aboutme}
-            alt="Maria Oliveira"
-          />
+      
           <div className="flex flex-col">
-            <span className="font-semibold text-gray-800">Maria Oliveira</span>
+            <span className="font-semibold text-gray-800">{title}</span>
             <div className="flex text-yellow-500">
               <FaStar />
               <FaStar />
@@ -47,8 +43,7 @@ function Blockslider() {
 
       {/* Review Text */}
       <p className="text-gray-600 text-sm md:text-base">
-      Lorem ipsum is placeholder text commonly used in the graphic, print,
-      and publishing industries for previewing layouts and visual mockups.
+      {text}
       </p>
     </div>
   );
@@ -70,13 +65,13 @@ export function Testimonials() {
       >
         {/* Slides */}
         <SwiperSlide>
-          <Blockslider />
+          <Blockslider title="Cinthya Brandão" text="O tratamento ortodôntico superou minhas expectativas, graças aos alinhadores e ao acolhimento da Dra. Adriana Libório. Após usar aparelho convencional, finalmente alcancei o sorriso dos meus sonhos. Estou muito grata e realizada com o resultado." />
         </SwiperSlide>
         <SwiperSlide>
-          <Blockslider />
+          <Blockslider title="Luciana Natal" text="Fui à Implant & Day Clinic indicada por uma amiga e fui muito bem recebida por todos os profissionais. A Dra. Adriana, que me atendeu mais, sempre foi acolhedora e demonstrou grande paixão pela odontologia. Sou grata pela transformação do meu sorriso e pelo carinho." />
         </SwiperSlide>
         <SwiperSlide>
-          <Blockslider />
+          <Blockslider title="Marcela Almeida" text="Enfrentei um grande desafio ortodôntico e encontrei na Dra. Adriana uma profissional competente e atenciosa, que me transmitiu segurança. Com coragem, passei por todas as etapas do tratamento e hoje estou feliz e realizada. Sou grata a ela e sua equipe pelo cuidado" />
         </SwiperSlide>
       </Swiper>
     </div>

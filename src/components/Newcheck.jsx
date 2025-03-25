@@ -19,7 +19,7 @@ export function Newcheck() {
   return (
     <div className="relative flex flex-col items-center w-[75%]   sm:w-[89%] md:w-full 2xl:w-full  rounded-[20px] bg-[#A98964]/30 border-2 border-[#A98985]/100">
       {/* Configurando flexbox para crescer dinamicamente */}
-      <div className="flex flex-col gap-20 justify-center items-center sm:gap-3 md:gap-[4rem] xl:gap-[8rem] p-[1rem]   sm:flex-row 2xl:gap-[18rem] w-[80%] ">
+      <div className="flex flex-col gap-20 justify-center items-center sm:gap-3 md:gap-[4rem] xl:gap-[8rem] p-[1rem]   sm:flex-row 2xl:gap-[12rem] xl3:gap-[15rem] w-[80%] ">
         <StyleNewcheck text="Atendimento personalizado" />
         <StyleNewcheck text="Tecnologia de ponta" />
         <StyleNewcheck text="Experiência sólida" />
