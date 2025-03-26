@@ -133,7 +133,7 @@ export function Header() {
               <img
                 src={aboutme}
                 alt="Dra. Adriana"
-                className="w-[300px] h-auto md:w-[400px]  rounded-md 2xl:relative  xl:w-[200]"
+                className="w-100 h-auto rounded-md 2xl:relative "
               />
             </div>
 
