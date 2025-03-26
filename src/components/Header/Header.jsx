@@ -19,7 +19,6 @@ import {
   bgpc,
   googleStar,
   bgcallme,
- 
   FaWhatsapp,
   bgcallmemac,
   bgcallmepc,
@@ -287,8 +286,7 @@ export function Header() {
 
         {/* vaia aq*/}
         <div className="w-full overflow-hidden">
-
-        <ImageSlider />
+          <ImageSlider />
         </div>
 
         <Watz />
@@ -323,7 +321,6 @@ export function Header() {
 
           <a
             href="https://wa.me/5571983333931?text=Quero%20saber%20mais"
-        
             className="flex items-center gap-2"
           >
             <div
