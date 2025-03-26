@@ -19,6 +19,7 @@ import {
   bgpc,
   googleStar,
   bgcallme,
+ 
   FaWhatsapp,
   bgcallmemac,
   bgcallmepc,
@@ -40,13 +41,13 @@ import ImageSlider from "../swiper/ImageSlider.jsx";
 
 export function Header() {
   return (
-    <section className="flex flex-col items-center justify-center h-auto gap-0 bg-[#EFECE3] ">
+    <section className="flex flex-col  items-center justify-center h-auto gap-0 bg-[#EFECE3] ">
       {/* Logo Centralizado */}
       <section
-        className="flex flex-col gap-10 px-[1rem] items-center xl:flex-row 2xl:px-[3.75rem] w-full "
+        className="flex flex-col gap-10 px-[1rem]  relative items-center xl:flex-row 2xl:px-[3.75rem] w-full "
         style={{ backgroundImage: `url(${bg})` }}
       >
-        <div className="relative flex flex-col items-center xl:items-center xl:self-center 2xl:self-start 2xl:pl-[10rem] ">
+        <div className="relative flex flex-col items-center lg:w-[60%] mb-[3rem] xl:items-center xl:self-center 2xl:self-start 2xl:pl-[10rem] ">
           <div className="pt-[5rem] flex flex-col items-center xl:items-center 2xl:self-start xl:self-center">
             <img
               className="w-[11.5rem] h-[5.375rem] xl:item 2xl:w-[23.5rem] 2xl:h-auto 2xl:relative 2xl:right-[11rem]"
@@ -83,7 +84,7 @@ export function Header() {
         <img
           src={home}
           alt=""
-          className="relative w-full md:w-[28.125rem] xl:w-[33.125rem] 2xl:w-[37.7rem]"
+          className="lg:absolute lg:right-10 w-full lg:bottom-0 md:w-[28.125rem] xl:w-[28rem] 2xl:w-[34rem]"
         />
       </section>
 
@@ -133,7 +134,7 @@ export function Header() {
               <img
                 src={aboutme}
                 alt="Dra. Adriana"
-                className="w-[300px] h-auto md:w-[400px]  rounded-md 2xl:relative 2xl:right-15 xl:w-[550px]"
+                className="w-[300px] h-auto md:w-[400px]  rounded-md 2xl:relative  xl:w-[200]"
               />
             </div>
 
@@ -145,7 +146,7 @@ export function Header() {
                 confiantes. Sou também Invisalign Doctor e trabalho com as mais
                 avançadas tecnologias de alinhamento dental e estética
                 orofacial. Meu compromisso vai além de apenas corrigir dentes —
-                estou aqui final transformar vidas através de sorrisos, uma
+                estou aqui para transformar vidas através de sorrisos, uma
                 pessoa de cada vez.{" "}
               </p>
               <div className="flex flex-col mt-6 items-center">
