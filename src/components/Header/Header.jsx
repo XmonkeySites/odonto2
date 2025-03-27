@@ -9,6 +9,9 @@ import "@fontsource/sora/200.css";
 
 import { ScrollAnimation } from "../AnimatedComponents/ScrollAnimation.jsx";
 
+import teste from "/teste.jpeg";
+import teste1 from "/teste1.png";
+
 import {
   logo,
   home,
@@ -122,7 +125,7 @@ export function Header() {
           {/* Título sempre no topo */}
 
           <div className=" xl:relative xl:top-[100px] flex md:self-start md:pt-15 md:px-8 xl:items-center xl:justify-center ">
-            <h2 className=" text-[3rem] text-[#9B7549] font-[500] text-center md:text-left w-full md:mt-0 ">
+            <h2 className=" text-[3rem] text-[#9B7549] lg:mb-20 font-[500] text-center md:text-left w-full md:mt-0 ">
               Sobre Mim
             </h2>
           </div>
@@ -131,7 +134,7 @@ export function Header() {
             {/* Seção da Imagem */}
             <div className="md:w-1/2 flex justify-center md:justify-end">
               <img
-                src={aboutme}
+                src={teste}
                 alt="Dra. Adriana"
                 className="w-100 h-auto rounded-md 2xl:relative "
               />
