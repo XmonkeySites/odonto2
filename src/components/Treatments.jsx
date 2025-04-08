@@ -5,8 +5,8 @@ import {
 } from "react-compare-slider";
 import { IoMdArrowDropright, IoMdArrowDropup } from "react-icons/io";
 import { ScrollAnimation } from "./AnimatedComponents/ScrollAnimation";
-import ivisalignA from "/InvisalignA.webp";
-import ivisalignB from "/InvisalignB.webp";
+import ivisalignA from "/invi_before.webp";
+import ivisalignB from "/invi_after.webp";
 import clareamentoA from "/clareamentoA1x.webp";
 import clareamentoB from "/clareamentoB1x.webp";
 import alignerA from "/alignerA1x.webp";
@@ -15,6 +15,8 @@ import discretoA from "/discretoA1x.webp";
 import discretoB from "/discretoB1x.webp";
 import aparelhoA from "/aparelhoA.webp";
 import aparelhoB from "/aparelhoB.webp";
+import interA from "/inter_before.webp";
+import interB from "/inter_after.webp";
 
 const treatmentsData = [
   {
@@ -51,8 +53,8 @@ const treatmentsData = [
     title: "Interceptação Ortodôntica",
     description:
       "Correção precoce para guiar o desenvolvimento saudável do sorriso.",
-    beforeImage: ivisalignA, // Imagem de antes
-    afterImage: ivisalignB, // Imagem de depois
+    beforeImage: interA, // Imagem de antes
+    afterImage: interB, // Imagem de depois
   },
   {
     id: "6",
