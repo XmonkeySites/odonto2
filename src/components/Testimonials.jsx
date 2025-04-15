@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import google from "/google.webp";
 import { FaStar } from "react-icons/fa";
-import aboutme from "/aboutme.png";
+
 
 // Import Swiper styles
 import "swiper/css";
